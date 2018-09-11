@@ -62,26 +62,28 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ (function(module, exports) {
 
 	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var WD = /** @class */ (function () {
-	    function WD(name) {
-	        this._name = '';
-	        this._age = 0;
-	        this._name = name;
-	    }
-	    Object.defineProperty(WD.prototype, "name", {
-	        get: function () {
-	            return this._name;
-	        },
-	        set: function (value) {
-	            this._name = value;
-	        },
-	        enumerable: true,
-	        configurable: true
-	    });
-	    return WD;
-	}());
-	exports.WD = WD;
+	// export class WD {
+	//     private _name = '';
+	//     private _age = 0;
+	//     constructor(name: string) {
+	//       this._name = name;
+	//     }
+	//     get name() {
+	//       return this._name;
+	//     }
+	//     set name(value: string) {
+	//       this._name = value;
+	//     }
+	// }
+	function init() {
+	    var divNode = document.createElement('div');
+	    divNode.classList.add('wec-floater-wrapper');
+	    document.documentElement.appendChild(divNode);
+	}
+	(function () {
+	    init();
+	})();
+	module.exports = init;
 
 
 /***/ })

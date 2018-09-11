@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "license": "MIT",
     "scripts": {
-        "build" : "npm run build-ts | npm run watch-css",
+        "build" : "npm run dev | npm run watch-css",
         "dev"   : "webpack --watch --progress",
         "build-ts": "tsc  --watch",
         "build-css": "node-sass --include-path css/src css/src/main.scss css/dist/wec.css",

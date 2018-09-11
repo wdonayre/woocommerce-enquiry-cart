@@ -1,0 +1,26 @@
+{
+    "name": "woocommerce-enquiry-cart",
+    "version": "0.1.0",
+    "license": "MIT",
+    "scripts": {
+        "build" : "npm run build-ts | npm run watch-css",
+        "dev"   : "webpack --watch --progress",
+        "build-ts": "tsc  --watch",
+        "build-css": "node-sass --include-path css/src css/src/main.scss css/dist/wec.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+        "prepublish": "webpack --debug; webpack -p"
+    },
+    "devDependencies": {
+        "node-sass": "^4.7.2",
+        "nodemon": "^1.12.1",
+        "typescript": "^2.2.0",
+        "ts-loader": "^0.8.1",
+        "tslint": "^3.5.0",
+        "tslint-loader": "^2.1.0",
+        "webpack": "^1.12.14"
+    },
+    "dependencies": {
+        "typescript-starter": "^1.2.1"
+    },
+    "private": true
+}

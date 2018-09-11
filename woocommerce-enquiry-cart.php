@@ -10,8 +10,8 @@
  * Version:     0.1
  * Plugin URI:  http://glabs.tech/labs/woocommerce-enquiry-cart
  * Description: Enquiry cart for woocommerce
- * Author:      William Donayre Jr.
- * Author URI:  http://wdonayre.com
+ * Author:      Glabs Tech (wdonayre)
+ * Author URI:  http://glabs.tech
  * Text Domain: woocommerce-enquiry-cart
  * Domain Path: /languages/
  * License:     MIT
@@ -30,4 +30,4 @@ if ( ! defined( 'WEC_FILE' ) ) {
 	define( 'WEC_FILE', __FILE__ );
 }
 // Load the Enquiry Cart plugin.
-require_once dirname( WEC_FILE ) . '/wp-seo-main.php';
+require_once dirname( WEC_FILE ) . '/main.php';
